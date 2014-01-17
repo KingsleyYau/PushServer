@@ -1,0 +1,20 @@
+1. 把 libjsonlib.so 放到 /usr/lib 目录下
+2. 配置 conf 文件，具体可参考《配置说明.doc》
+3. 运行 pushsvr ，如：安装目录下
+#./pushsvr ./conf &
+PS:注意执行权限及数据库是否能连通
+
+
+Q：运行时，报/lib/ld-linux.so.2: bad ELF interpreter:
+A：#yum install ld-linux.so.2
+
+Q：运行时，报libmysqlclient.so.15: cannot open shared object file
+A：命令行输入：
+#wget -O /usr/lib/libmysqlclient.so.15 http://files.directadmin.com/services/es_5.0/libmysqlclient.so.15
+#chmod 755 /usr/lib/libmysqlclient.so.15
+#ldconfig
+
+Q：运行时，报libstdc++.so.6: cannot open shared object file
+A：命令行输入：
+#yum install libstdc++.so.6
+#yum install libstdc++-4.4.6-4.el6.i686

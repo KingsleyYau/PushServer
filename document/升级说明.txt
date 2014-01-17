@@ -1,0 +1,8 @@
+1. 登录DB
+2. 修改push_identification表中 applastver、apppkgurl、appverdesc、updatestatus、testtokenid 字段
+applastver：客户端升级后的版本(比该版本小，则PushServer发送升级信息到客户端)
+apppkgurl：客户端升级安装包地址
+appverdesc：客户端升级描述
+updatestatus：升级状态（0:关闭，1:公开(所有客户端升级3)，2:测试(指定tokenid设备连接才会升级)）
+testtokenid：指定测试升级的tokenid（updatestatus=2才生效，可指定多个：ca0c25828c6d543e709cbd6ab7b5f860;bd96cdd69a5970e43a9b9faa33e8e4df;aad0f3ada5b49b2d43db0e678814d6e0;）
+3. 刷新PushServer，使其重新加载数据（打开 ReloadDB.htm ，点击刷新）
