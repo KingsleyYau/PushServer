@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JsonCppLib", "JsonCppLib\JsonCppLib.vcproj", "{C737D19A-BFAB-4A90-8AEC-A828539761C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataProcessing", "..\..\..\windows\modules\DataProcessing\DataProcessing.vcproj", "{502C99A0-6B17-429B-B07A-BE8CAF29A77C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileHelper", "..\..\..\windows\modules\FileHelper\FileHelper.vcproj", "{F6779D69-F2C9-47EE-881C-2630CB67DAAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PushServerStressTest_Client", "PushServerStressTest_Client\PushServerStressTest_Client.vcproj", "{3C9530F3-7196-4317-9312-6D770F668870}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A} = {8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD} = {F6779D69-F2C9-47EE-881C-2630CB67DAAD}
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2} = {C737D19A-BFAB-4A90-8AEC-A828539761C2}
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C} = {502C99A0-6B17-429B-B07A-BE8CAF29A77C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabaseManager", "..\..\..\windows\modules\DatabaseManager\DatabaseManager.vcproj", "{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		dummy|Win32 = dummy|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.Debug|Win32.Build.0 = Debug|Win32
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.dummy|Win32.ActiveCfg = Debug|Win32
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.dummy|Win32.Build.0 = Debug|Win32
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.Release|Win32.ActiveCfg = Release|Win32
+		{C737D19A-BFAB-4A90-8AEC-A828539761C2}.Release|Win32.Build.0 = Release|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.Debug|Win32.Build.0 = Debug|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.dummy|Win32.ActiveCfg = Debug|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.dummy|Win32.Build.0 = Debug|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.Release|Win32.ActiveCfg = Release|Win32
+		{502C99A0-6B17-429B-B07A-BE8CAF29A77C}.Release|Win32.Build.0 = Release|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.Debug|Win32.Build.0 = Debug|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.dummy|Win32.ActiveCfg = Debug|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.dummy|Win32.Build.0 = Debug|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.Release|Win32.ActiveCfg = Release|Win32
+		{F6779D69-F2C9-47EE-881C-2630CB67DAAD}.Release|Win32.Build.0 = Release|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.Debug|Win32.Build.0 = Debug|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.dummy|Win32.ActiveCfg = Debug|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.dummy|Win32.Build.0 = Debug|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.Release|Win32.ActiveCfg = Release|Win32
+		{3C9530F3-7196-4317-9312-6D770F668870}.Release|Win32.Build.0 = Release|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.Debug|Win32.Build.0 = Debug|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.dummy|Win32.ActiveCfg = Debug|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.dummy|Win32.Build.0 = Debug|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.Release|Win32.ActiveCfg = Release|Win32
+		{8491E84D-ECCE-4830-BB7A-66D9D6A59E3A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

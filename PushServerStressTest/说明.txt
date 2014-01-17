@@ -1,0 +1,3 @@
+项目IOCP_Client副本 用于PushServer暴力测试。 测试选项分别有SocketConnect， GetChallenge，RegisterTokenID，GetPushMessage。
+项目IOCP_Client用于 PushMessage测试，具有随机上下线的功能，模拟真实的测试环境
+项目Server用于向PushServer发送PushMessage

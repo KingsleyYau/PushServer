@@ -1,0 +1,10 @@
+POST / HTTP/1.1
+CHARSET: UTF-8
+CONNECTION: KEEP-ALIVE
+CONTENT-TYPE: TEXT/HTML
+USER-AGENT: DALVIK/1.4.0 (LINUX; U; ANDROID 2.3.6; MB526 BUILD/4.5.1-134_DFP-231)
+HOST: 192.168.11.113:81
+CONTENT-LENGTH: 265
+ACCEPT-ENCODING: GZIP
+
+{"cmd":"pushmsg","body":{"tokenidlist":[{"tokenid":"e5204c8e6d5142dcc956568866f6ce2c"},{"tokenid":"9f32b794fe3a0b0ef139efc15283abd6"},{"tokenid":"0864380236a66825b87aa4f4ac320ed4"}],"body":{"aps":{"alert":"测试","badge":1,"sound":"default"},"etype":1}}}

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PushServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\PushServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="cygwin" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\PushServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="DrVerServer\Makefile.d" />
+		<Unit filename="DrVerServer\Makefile.r" />
+		<Unit filename="DrVerServer\dataParser\ClientHandler.cpp" />
+		<Unit filename="DrVerServer\dataParser\ClientHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\ClientManager.cpp" />
+		<Unit filename="DrVerServer\dataParser\ClientManager.hpp" />
+		<Unit filename="DrVerServer\dataParser\DBHandler.cpp" />
+		<Unit filename="DrVerServer\dataParser\DBHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\DataParser.cpp" />
+		<Unit filename="DrVerServer\dataParser\DataParser.hpp" />
+		<Unit filename="DrVerServer\dataParser\InsideTcpServer.cpp" />
+		<Unit filename="DrVerServer\dataParser\InsideTcpServer.hpp" />
+		<Unit filename="DrVerServer\dataParser\LogicHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\MatchPacketHandler.cpp" />
+		<Unit filename="DrVerServer\dataParser\MatchPacketHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\OnlineClientManager.cpp" />
+		<Unit filename="DrVerServer\dataParser\OnlineClientManager.hpp" />
+		<Unit filename="DrVerServer\dataParser\PushHandler.cpp" />
+		<Unit filename="DrVerServer\dataParser\PushHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\PushManager.cpp" />
+		<Unit filename="DrVerServer\dataParser\PushManager.hpp" />
+		<Unit filename="DrVerServer\dataParser\RecvParser.cpp" />
+		<Unit filename="DrVerServer\dataParser\RecvParser.hpp" />
+		<Unit filename="DrVerServer\dataParser\RspParser.cpp" />
+		<Unit filename="DrVerServer\dataParser\RspParser.hpp" />
+		<Unit filename="DrVerServer\dataParser\ServerHandler.cpp" />
+		<Unit filename="DrVerServer\dataParser\ServerHandler.hpp" />
+		<Unit filename="DrVerServer\dataParser\TcpServer.cpp" />
+		<Unit filename="DrVerServer\dataParser\TcpServer.hpp" />
+		<Unit filename="DrVerServer\json\autolink.h" />
+		<Unit filename="DrVerServer\json\config.h" />
+		<Unit filename="DrVerServer\json\features.h" />
+		<Unit filename="DrVerServer\json\forwards.h" />
+		<Unit filename="DrVerServer\json\json.h" />
+		<Unit filename="DrVerServer\json\reader.h" />
+		<Unit filename="DrVerServer\json\value.h" />
+		<Unit filename="DrVerServer\json\writer.h" />
+		<Unit filename="DrVerServer\main.cpp" />
+		<Unit filename="DrVerServer\mio2\mio2_epoll.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\mio2\mio2_epoll.hpp" />
+		<Unit filename="DrVerServer\mio\inaddr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\mio\inaddr.h" />
+		<Unit filename="DrVerServer\mio\mio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\mio\mio.h" />
+		<Unit filename="DrVerServer\mio\mio_poll.h" />
+		<Unit filename="DrVerServer\mio\mio_select.h" />
+		<Unit filename="DrVerServer\mio\util_compat.h" />
+		<Unit filename="DrVerServer\unit\Arithmetic.cpp" />
+		<Unit filename="DrVerServer\unit\Arithmetic.hpp" />
+		<Unit filename="DrVerServer\unit\ConfFile.cpp" />
+		<Unit filename="DrVerServer\unit\ConfFile.hpp" />
+		<Unit filename="DrVerServer\unit\DBSpool.cpp" />
+		<Unit filename="DrVerServer\unit\DBSpool.hpp" />
+		<Unit filename="DrVerServer\unit\DrVerData.hpp" />
+		<Unit filename="DrVerServer\unit\LogFile.cpp" />
+		<Unit filename="DrVerServer\unit\LogFile.hpp" />
+		<Unit filename="DrVerServer\unit\MessageMgr.cpp" />
+		<Unit filename="DrVerServer\unit\MessageMgr.hpp" />
+		<Unit filename="DrVerServer\unit\SocketProc.hpp" />
+		<Unit filename="DrVerServer\unit\TimeProc.hpp" />
+		<Unit filename="DrVerServer\unit\event.hpp" />
+		<Unit filename="DrVerServer\unit\md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\unit\md5.h" />
+		<Unit filename="DrVerServer\zip\mkstemp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip.h" />
+		<Unit filename="DrVerServer\zip\zip_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_add_dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_close.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_delete.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_dirent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_entry_free.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_entry_new.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_err_str.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error_clear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error_get_sys_type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error_strerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_error_to_str.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_fclose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_file_error_clear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_file_error_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_file_get_offset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_file_strerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_filerange_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_fopen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_fopen_index.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_fread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_free.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_get_archive_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_get_archive_flag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_get_file_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_get_name.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_get_num_files.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_memdup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_name_locate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_new.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_open.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_rename.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_replace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_set_archive_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_set_archive_flag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_set_file_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_set_name.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_filep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_free.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_function.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_source_zip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_stat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_stat_index.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_stat_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_strerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_unchange.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_unchange_all.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_unchange_archive.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zip_unchange_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DrVerServer\zip\zipint.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

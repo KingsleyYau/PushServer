@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PushServerStressTest_Client.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PushServerStressTest_Client.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PUSHSERVERSTRESSTEST_CLIENT_DIALOG DIALOGEX 0, 0, 396, 275
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PushServerStressTest_Client"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "参数设置",IDC_STATIC,14,15,364,89
+    LTEXT           "服务器IP地址：",IDC_STATIC,29,30,57,11
+    CONTROL         "",IDC_SER_IPADDR,"SysIPAddress32",WS_TABSTOP,101,29,83,13
+    LTEXT           "端口：",IDC_STATIC,209,31,25,11
+    EDITTEXT        IDE_SER_PORT,246,29,41,16,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_SEND_CONTENT,73,57,270,40,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "发送消息：",IDC_STATIC,27,55,40,14
+    CONTROL         "",IDC_TAB_TEST,"SysTabControl32",0x0,15,107,363,150
+END
+
+IDD_ROUTINE_TEST DIALOGEX 0, 0, 338, 138
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "测试一",IDC_STATIC,9,23,74,101
+    GROUPBOX        "测试二",IDC_STATIC,87,23,74,101
+    GROUPBOX        "测试三",IDC_STATIC,167,23,74,101
+    GROUPBOX        "测试四",IDC_STATIC,250,25,74,101
+    PUSHBUTTON      "启动线程",IDB_START_THREAD_I,23,56,50,14
+    PUSHBUTTON      "停止线程",IDB_STOP_THREAD_I,23,78,50,14
+    PUSHBUTTON      "启动线程",IDB_START_THREAD_II,100,56,50,14
+    PUSHBUTTON      "停止线程",IDB_STOP_THREAD_II,99,78,50,14
+    PUSHBUTTON      "启动线程",IDB_START_THREAD_III,180,56,50,14
+    PUSHBUTTON      "停止线程",IDB_STOP_THREAD_III,180,78,50,14
+    PUSHBUTTON      "启动线程",IDB_START_THREAD_IV,263,56,50,14
+    PUSHBUTTON      "停止线程",IDB_STOP_THREAD_IV,263,80,50,14
+END
+
+IDD_STRESS_DLG DIALOGEX 0, 0, 336, 136
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "开始测试",IDC_BTN_START_TEST,79,105,50,14
+    PUSHBUTTON      "结束测试",IDC_BTN_END_TEST,178,106,50,14
+    LTEXT           "设置并发线程数：",IDC_STATIC,47,19,66,11
+    EDITTEXT        IDC_EDIT_THREADNUM,131,17,42,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "TokenID前缀：",IDC_STATIC,48,39,64,10
+    LTEXT           "TokenID起始值：",IDC_STATIC,48,59,62,11
+    EDITTEXT        IDC_EDIT_TOKENID_PRE,131,38,70,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOKENID_STARTNUM,131,60,72,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PushServerStressTest_Client.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PushServerStressTest_Client.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PUSHSERVERSTRESSTEST_CLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_ROUTINE_TEST, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PushServerStressTest_Client.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

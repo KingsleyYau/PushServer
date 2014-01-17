@@ -1,0 +1,5 @@
+#pragma once
+
+#define WM_GET_PUSHSRV_IP WM_USER+ 1201								
+#define WM_GET_PUSHSRV_PORT WM_GET_PUSHSRV_IP + 1
+#define WM_GET_TIMESLOT WM_GET_PUSHSRV_PORT + 1
