@@ -1,0 +1,13 @@
+############开发版本###################
+openssl x509 -in aps_development.cer -inform der -out aps_dev_cer.pem
+openssl pkcs12 -nocerts -out aps_distribution_Key.pem -in  文件名.p12
+cat aps_dev_cer.pem aps_distribution_Key.pem > dev_ck_学校ID.pem  
+
+
+############运营版本###################
+openssl x509 -in aps_production.cer -inform der -out aps_production.cer.pem
+openssl pkcs12 -nocerts -out aps_production.key.pem -in 文件名.p12
+cat aps_production.cer.pem aps_production.key.pem > pro_ck_学校ID.pem  
+
+//需要输入的密码，请保持三次输入一致
+sn:doctorcom.com
